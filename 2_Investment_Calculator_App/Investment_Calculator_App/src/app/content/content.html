@@ -1,0 +1,34 @@
+<!-- Result display component -->
+<div class="content">
+  <!-- if there is no content display inform -->
+  @if (!datas()) {
+  <p>Please enter some values and press "Calculate".</p>
+  }
+  <!-- else display result -->
+  @else {
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Investment Value</th>
+        <th>Interest (Year)</th>
+        <th>Total Interest</th>
+        <th>Invested Capital</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (item of datas(); track $index) {
+      <tr>
+        <td>{{ item.year }}</td>
+        <td>{{ item.valueEndOfYear | currency }}</td>
+        <td>{{ item.interest | currency }}</td>
+        <td>{{ item.totalInterest | currency }}</td>
+        <td>{{ item.totalAmountInvested | currency }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+
+  }
+</div>

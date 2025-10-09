@@ -1,0 +1,32 @@
+
+/*3. css for result display component */
+.content{
+    margin-top: 3rem;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+}
+
+th, td{
+    width: auto;
+    padding: 0.5rem 0.5rem ;
+}
+
+th{
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #69d8a0;
+}
+
+td{
+    font-size: 0.6rem;
+    color: #d1fce6;
+}
